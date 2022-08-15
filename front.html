@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Minor</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="search.css">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    </head>
+    <body>
+        <header>
+        <nav>
+            <div class="logo">EASY</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="compare.html">Compare</a></li>
+                <li><a href="login.html">Login/Sign-Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="input-box">
+            <input type="text" placeholder="Search...">
+            <span class="search">
+                <i class="uil uil-search search-icon"></i>
+            </span>
+            <i class="uil uil-times close-icon"></i>
+        </div>
+        <script>
+            let inputBox = document.querySelector(".input-box")
+            search = document.querySelector(".search")
+            closeIcon = document.querySelector(".close-icon")
+        search.addEventListener("click", () => inputBox.classList.add("open"));
+        closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
+        </script>
+    </section>
+    <section>
+        
+    </section>
+    </body>
+</html>
